@@ -13,10 +13,10 @@ namespace DataAccess.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\MSSQLLocalDB;Database=StockExamp;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(connectionString: @"server=.;database=StockApp;trusted_connection=true;");
         }
 
-        public DbSet<Stock> Stocks { get; set; }
+        public DbSet<Stock> Stock { get; set; }
 
     }
 }
