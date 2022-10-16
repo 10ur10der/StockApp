@@ -13,7 +13,7 @@ namespace Entities.Concrete
         public string VariantCode { get; set; }
         public string ProductCode { get; set; }
         public int Quantity { get; set; }
-        public DateTime CreatedTime { get; set; }
-        public DateTime UpdateTime { get; set; }
+        public DateTime? CreatedTime { get; set; }
+        public DateTime? UpdateTime { get; set; }
     }
 }
